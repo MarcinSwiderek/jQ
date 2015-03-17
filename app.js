@@ -1,13 +1,6 @@
-var el=document.getElementById("my-button");
-el.addEventListener('click', function(event) {
-	alert('click'); 
-	console.log(event);
-	if (event.screenX<30) {
-		console.log("<30");
-	}
-	if(event.shiftKey===true) {
-		console.log("shift");
-	}
-
+var OuterVar=document.getElementById('btn-toggle');
+var InnerVar=document.getElementById('my-menu');
+OuterVar.addEventListener('click', function() {
+	InnerVar.classList.toggle('active');
+	
 });
-
