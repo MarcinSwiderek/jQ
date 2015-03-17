@@ -1,6 +1,8 @@
-var OuterVar=document.getElementById('btn-toggle');
-var InnerVar=document.getElementById('my-menu');
-OuterVar.addEventListener('click', function() {
-	InnerVar.classList.toggle('active');
+var Buttons=document.querySelectorAll('.btn--delete');
+
+for(var i=0;i<Buttons.length;i++) {
+	Buttons[i].addEventListener('click', function(event) {
+		event.target.parentNode.remove()
+	});	
 	
-});
+}
