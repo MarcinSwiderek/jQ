@@ -5,28 +5,15 @@
 
 	</head>
  	<body>	
-		<h2>Item list</h2>
-		<ul>
-			<li>
-				<strong>Item 1</strong>
-				<button class="btn--delete">Delete</button>
-			</li>
-			<li>
-				<strong>Item 2</strong>
-				<button class="btn--delete">Delete</button>
-			</li>
-			<li>
-				<strong>Item 3</strong>
-				<button class="btn--delete">Delete</button>
-			</li>
-			<li>
-				<strong>Item 4</strong>
-				<button class="btn--delete">Delete</button>
-			</li>
-		
-		</ul>
-
-			
+		<h2>To do list</h2>
+		<ul id='my-todo'></ul>
+		<form>
+			<fieldset>
+				<label for="new_item">Add to do item</label>
+				<input type="text" name="id_new_item" id="new_item" value="">
+				<button type="submit" id="my-form">Add</button>									
+			</fieldset>				
+		</form>	
 		<script src="app.js"></script>	
 	</body>
 </html>
