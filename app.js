@@ -1,19 +1,10 @@
-var myList=document.getElementById('my-todo'),
-	myForm=document.getElementById('my-form'),
-	myInput=document.getElementById('new_item');
+var input=document.getElementById('tekst');
+var saved=document.getElementById('save');
 
-myForm.addEventListener('click',function(event) {
+saved.addEventListener('click',function(event) {
+	window.localStorage.setItem('wpisany tekst',input.value);
 	
-	event.preventDefault();
-	//create list item
-	var listItem=document.createElement("li"),
-		listItemText=document.createTextNode(myInput.value);
-	//append text to list item
-	listItem.appendChild(listItemText);
-	
-	//append list item to menu 
-	myList.appendChild(listItem);
-	//clear inputValue
-	
-	myInput.value='';
 });
+
+input.value=window.localStorage.getItem('wpisany tekst');
+
