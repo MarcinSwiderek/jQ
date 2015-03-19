@@ -7,6 +7,10 @@ $(document).on('ready',function(){
 	$('span').on('dblclick',function(){
 		$(this).css('background','white');
 	});
-	
+	$('#erase').on('click',function(){
+		$('span').each(function(index){
+			$(this).css('background','white');
+		});
+	});
 	
 });
