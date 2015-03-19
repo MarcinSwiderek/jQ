@@ -5,9 +5,9 @@ $(document).on('ready',function(){
 		$('#my-todo').append('<li>'+$('#new_item').val()+'</li>');
 		$('li').on('dblclick',function(event){
 			$(this).remove();
-		
+			
 		});
-		
+		$('input').val('');
 	});
 	
 	
