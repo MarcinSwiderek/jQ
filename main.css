@@ -1,0 +1,10 @@
+#header {
+	background: red;
+	height: 100px;
+}
+
+span.popup {
+	width: 200;
+	height: 150;
+	background: blue;
+}
