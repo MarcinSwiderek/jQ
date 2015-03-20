@@ -6,6 +6,11 @@ $(document).on('ready',function(){
 	setInterval(function(){
 		time+=1;
 		$('#time').text(time);
+		if(time===60) {
+			alert("!!!111!!jeden!!jeden Twoj wynik to : "+score);
+			location.reload();
+		}
+		
 	},1000);
 	
 	
@@ -14,15 +19,19 @@ $(document).on('ready',function(){
 		$('span').removeClass('active');
 		$('span').eq(random).addClass('active');	
 		
-	},2000);
+	},1000);
 	
 	$('span').on('click', function(){
 		if($(this).hasClass('active')) {
 			
 		score+=1;
-		$('#score').text(score);
+		$('#score').fadeOut(400,function(){
+			$('#score').text(score).fadeIn();
+		});
 		$(this).removeClass('active');
-		}				
+		}					
 	});
+	
+	
 	
 });
