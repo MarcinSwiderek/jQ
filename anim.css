@@ -1,0 +1,9 @@
+.box {
+	opacity: 0;
+	margin-top: 20px;
+	width:200px;
+	height:200px;
+	background:#DD5A16;
+	float: left;
+	
+}
